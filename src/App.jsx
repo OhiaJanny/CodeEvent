@@ -8,6 +8,7 @@ import SuccessStoriesVideos from './pages/SuccessStoriesVideos';
 import Sponsor from './pages/Sponsor';
 import Hercodekathon from './pages/Hercodekathon';
 import Coaching from './pages/Coaching';
+import Events from './pages/Events';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: "coaching",
     element: <Coaching/>,
+  },
+  {
+    path: "events",
+    element: <Events/>,
   },
 ]);
 
