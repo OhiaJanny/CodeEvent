@@ -3,6 +3,7 @@ import Footer from "../layout/Footer"
 import Navbar from "../layout/Navbar"
 
 const Hercodekathon = () => {
+    
     return (
         <>
             <Navbar />
@@ -60,8 +61,8 @@ const Hercodekathon = () => {
                         <div className='text-white text-center grid place-items-center gap-y-5 max-w-[28rem] mx-auto'>
                             <h1 className="text-[40px] font-bold">Hercodekathon 2023</h1>
                             <p className="opacity-80 text-[20px]">Interested in brainstorming with other techies?
-Join our weekend coding challenge to upgrade
-your skills</p>
+                                Join our weekend coding challenge to upgrade
+                                your skills</p>
                             <Button>Learn more</Button>
                         </div>
                     </section>

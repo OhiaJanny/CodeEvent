@@ -7,6 +7,7 @@ import {
 import SuccessStoriesVideos from './pages/SuccessStoriesVideos';
 import Sponsor from './pages/Sponsor';
 import Hercodekathon from './pages/Hercodekathon';
+import Coaching from './pages/Coaching';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "hercodekathon",
     element: <Hercodekathon/>,
+  },
+  {
+    path: "coaching",
+    element: <Coaching/>,
   },
 ]);
 
