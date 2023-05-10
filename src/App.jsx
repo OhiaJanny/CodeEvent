@@ -11,6 +11,7 @@ import Coaching from './pages/Coaching';
 import Events from './pages/Events';
 import Programme from './pages/Programme';
 import About from './pages/About';
+import SuccessStoriesRead from './pages/SuccessStoriesRead';
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
   {
     path: "about",
     element: <About/>,
+  },
+  {
+    path: "success-stories-read",
+    element: <SuccessStoriesRead/>,
   },
 ]);
 
