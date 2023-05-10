@@ -42,3 +42,10 @@
   background-position-x: 0%, 100%;
   background-blend-mode: hard-light;
 }
+
+.success-stories-vids-bg{
+  background-image:url(./assets/_Group_.svg);
+  background-repeat:no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50px;
+}

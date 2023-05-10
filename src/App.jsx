@@ -1,13 +1,22 @@
 import './App.css'
 import Home from './pages/Home'
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom"
+import SuccessStoriesVideos from './pages/SuccessStoriesVideos';
 
-function App() {
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home/>
+  },
+  {
+    path: "success-stories-videos",
+    element: <SuccessStoriesVideos/>,
+  },
+]);
 
-  return (
-    <>
-     <Home/> 
-    </>
-  )
+export default function App(){
+  return <RouterProvider router={router} />
 }
-
-export default App
