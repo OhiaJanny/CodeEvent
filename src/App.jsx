@@ -5,6 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom"
 import SuccessStoriesVideos from './pages/SuccessStoriesVideos';
+import Sponsor from './pages/Sponsor';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "success-stories-videos",
     element: <SuccessStoriesVideos/>,
+  },
+  {
+    path: "sponsor",
+    element: <Sponsor/>,
   },
 ]);
 

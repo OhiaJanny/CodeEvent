@@ -6,7 +6,7 @@ const SuccessStoriesVideos = () => {
         <>
             <Navbar />
 
-            <section className="bg-dark py-[8rem] success-stories-vids-bg">
+            <section className="bg-dark py-[8rem] earth-image-bg">
                 <div className="max-w-xl mx-auto px-6">
                     <header className="max-w-[40rem] mx-auto mb-20">
                         <h1 className="text-[40px] text-white font-bold text-center">Successful stories from
