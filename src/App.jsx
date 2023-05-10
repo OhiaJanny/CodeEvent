@@ -6,6 +6,7 @@ import {
 } from "react-router-dom"
 import SuccessStoriesVideos from './pages/SuccessStoriesVideos';
 import Sponsor from './pages/Sponsor';
+import Hercodekathon from './pages/Hercodekathon';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "sponsor",
     element: <Sponsor/>,
+  },
+  {
+    path: "hercodekathon",
+    element: <Hercodekathon/>,
   },
 ]);
 
