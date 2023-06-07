@@ -24,6 +24,10 @@ const router = createBrowserRouter([
     element: <SuccessStoriesVideos/>,
   },
   {
+    path: "success-stories-read",
+    element: <SuccessStoriesRead/>,
+  },
+  {
     path: "sponsor",
     element: <Sponsor/>,
   },
