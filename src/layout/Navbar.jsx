@@ -42,7 +42,7 @@ const Navbar = () => {
         <div>
           <img src={logo} alt="HerCode Logo" />
         </div>
-        <div className="text-white flex items-center gap-x-5">
+        <div className="text-white flex items-center gap-x-4">
           {
             navDataLinks.map((nvl, i) => (
               <NavLink key={i}
@@ -55,7 +55,9 @@ const Navbar = () => {
               </NavLink>
             ))
           }
-          <Button className="ml-10">Connect</Button>
+        </div>
+        <div>
+          <Button>Connect</Button>
         </div>
       </div>
     </nav>
