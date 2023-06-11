@@ -47,7 +47,7 @@ const Navbar = () => {
               <NavLink key={i}
                 to={nvl.to}
                 className={({ isActive }) =>
-                  isActive ? "text-[#D8BFD8]" : ""
+                  isActive ? "text-[#D8BFD8]" : "hover:text-[#D8BFD8]"
                 }
               >
                 {nvl.link}
@@ -75,6 +75,11 @@ const Navbar = () => {
                 }>
                 Events
               </NavLink>
+              <NavLink to="/parent-submit" className={({ isActive }) =>
+                  isActive ? "nav-item-dropdown-link text-[#D8BFD8]" : "nav-item-dropdown-link"
+                }>
+                Parent Submits
+              </NavLink>
             </div>
           </div>
           {
@@ -82,7 +87,7 @@ const Navbar = () => {
               <NavLink key={i}
                 to={nvl.to}
                 className={({ isActive }) =>
-                  isActive ? "text-[#D8BFD8]" : ""
+                  isActive ? "text-[#D8BFD8]" : "hover:text-[#D8BFD8]"
                 }
               >
                 {nvl.link}

@@ -12,7 +12,7 @@ import Events from './pages/Events';
 import Programme from './pages/Programme';
 import About from './pages/About';
 import SuccessStoriesRead from './pages/SuccessStoriesRead';
-import Bootcamp from './pages/Bootcamp';
+import ParentSubmit from './pages/ParentSubmit';
 
 const router = createBrowserRouter([
   {
@@ -56,8 +56,8 @@ const router = createBrowserRouter([
     element: <SuccessStoriesRead/>,
   },
   {
-    path:'bootcamp',
-    element: <Bootcamp/>
+    path:'parent-submit',
+    element: <ParentSubmit/>
   }
 ]);
 
