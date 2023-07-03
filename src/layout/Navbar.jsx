@@ -3,35 +3,66 @@ import Button from '../components/Button'
 import { NavLink } from 'react-router-dom'
 
 
-const navDataLinks1 = [
+const navLinksData = [
   {
     to: '/',
-    link: 'Home'
+    link: 'Home',
+    isDropdown: false
   },
   {
     to: '/coaching',
-    link: 'Coaching'
+    link: 'Coaching',
+    isDropdown: false
   },
-]
-
-const navDataLinks2 = [
+  {
+    link: 'Success Stories',
+    isDropdown: true,
+    dropdown: [
+      {
+        to: '/success-stories-read',
+        link: 'Read Success Stories',
+      },
+      {
+        to: '/success-stories-videos',
+        link: 'Watch Success Stories',
+      },
+    ]
+  },
   {
     to: '/hercodekathon',
-    link: 'Hercodekathon'
+    link: 'Hercodekathon',
+    isDropdown: false
   },
   {
     to: '/sponsor',
-    link: 'Sponsor/ win'
+    link: 'Sponsor/ win',
+    isDropdown: false,
   },
   {
-    to: '/programme',
-    link: 'Programme'
+    link: 'Programme',
+    isDropdown: true,
+    dropdown: [
+      {
+        to: '/programme',
+        link: 'Bootcamps',
+      },
+      {
+        to: '/events',
+        link: 'Events',
+      },
+      {
+        to: '/parent-submit',
+        link: 'Parent Submits',
+      },
+    ]
   },
   {
     to: '/about',
-    link: 'About us'
+    link: 'About us',
+    isDropdown: false,
   },
 ]
+
 
 
 const Navbar = () => {
@@ -41,62 +72,42 @@ const Navbar = () => {
         <div>
           <img src={logo} alt="HerCode Logo" />
         </div>
-        <div className="text-white flex items-center gap-x-4">
+        <div className="text-white flex items-center gap-x-3">
           {
-            navDataLinks1.map((nvl, i) => (
-              <NavLink key={i}
-                to={nvl.to}
-                className={({ isActive }) =>
-                  isActive ? "text-[#D8BFD8]" : "hover:text-[#D8BFD8]"
-                }
-              >
-                {nvl.link}
-              </NavLink>
-            ))
-          }
-          <div className="nav-item py-3">
-            <div className="flex items-center gap-x-[1px] nav-item-title">
-              <p>Success Stories</p><span className="material-icons"> expand_more </span>
-            </div>
-            <div className="nav-item-dropdown nav-items-dropdown-services">
-              <div className="nav-item-dropdown-triangle"></div>
-              <NavLink to="/success-stories-read" className={({ isActive }) =>
-                  isActive ? "nav-item-dropdown-link text-[#D8BFD8]" : "nav-item-dropdown-link"
-                }>
-                Read Success Stories
-              </NavLink>
-              <NavLink to="/success-stories-videos" className={({ isActive }) =>
-                  isActive ? "nav-item-dropdown-link text-[#D8BFD8]" : "nav-item-dropdown-link"
-                }>
-                Watch Success Stories
-              </NavLink>
-              <NavLink to="/events" className={({ isActive }) =>
-                  isActive ? "nav-item-dropdown-link text-[#D8BFD8]" : "nav-item-dropdown-link"
-                }>
-                Events
-              </NavLink>
-              <NavLink to="/parent-submit" className={({ isActive }) =>
-                  isActive ? "nav-item-dropdown-link text-[#D8BFD8]" : "nav-item-dropdown-link"
-                }>
-                Parent Submits
-              </NavLink>
-            </div>
-          </div>
-          {
-            navDataLinks2.map((nvl, i) => (
-              <NavLink key={i}
-                to={nvl.to}
-                className={({ isActive }) =>
-                  isActive ? "text-[#D8BFD8]" : "hover:text-[#D8BFD8]"
-                }
-              >
-                {nvl.link}
-              </NavLink>
+            navLinksData.map((nvl, i) => (
+              nvl.isDropdown ?
+                <div className="nav-item py-3" key={i}>
+                  <div className="flex items-center gap-x-[1px] nav-item-title">
+                    <p>{nvl.link}</p><span className="material-icons"> expand_more </span>
+                  </div>
+                  <div className="nav-item-dropdown nav-items-dropdown-services">
+                    <div className="nav-item-dropdown-triangle"></div>
+                    {
+                      nvl.dropdown.map((_nvl, j) => (
+                        <NavLink key={j} to={_nvl.to} className={({ isActive }) =>
+                          isActive ? "nav-item-dropdown-link text-[#D8BFD8]" : "nav-item-dropdown-link"
+                        }>
+                          {_nvl.link}
+                        </NavLink>
+                      ))
+                    }
+                  </div>
+                </div>
+                :
+                <NavLink key={i}
+                  to={nvl.to}
+                  className={({ isActive }) =>
+                    isActive ? "text-[#D8BFD8]" : "hover:text-[#D8BFD8]"
+                  }
+                >
+                  {nvl.link}
+                </NavLink>
             ))
           }
         </div>
-        <div>
+        <div className='flex items-center gap-x-4'>
           <Button>Connect</Button>
+          <span className='material-icons text-white'>menu</span>
         </div>
       </div>
     </nav>
