@@ -17,6 +17,7 @@ import ParentSubmit from './pages/ParentSubmit';
 import Careers from './pages/Careers'
 import { ScrollRestoration } from "react-router-dom";
 import PageNotFound from './pages/PageNotFound';
+import Terms from './pages/Terms';
 
 const Root = () => {
 
@@ -81,6 +82,10 @@ const router = createBrowserRouter([
       {
         path:'careers',
         element: <Careers />
+      },
+      {
+        path:'terms',
+        element: <Terms />
       }
     ]
   },

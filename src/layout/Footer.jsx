@@ -26,16 +26,16 @@ const Footer = () => {
           </div>
           <div className="text-white flex flex-col gap-y-4 text-[15px] max-w-[12rem]">
             <h2 className="font-bold text-[19px]">Company</h2>
-            <a href="#">About</a>
-            <a href="#">Success Stories</a>
-            <a href="#">Parent Submit</a>
+            <Link to="/about">About</Link>
+            <Link to="/success-stories-read">Success Stories</Link>
+            <Link to="/parent-submit">Parent Submit</Link>
             <Link to='/careers'>Careers</Link>
           </div>
           <div className="text-white flex flex-col gap-y-4 text-[15px] max-w-[12rem]">
             <h2 className="font-bold text-[19px]">Events</h2>
-            <a href="#">Hercodekathon</a>
+            <Link to="/hercodekathon">Hercodekathon</Link>
             <a href="#">WTC</a>
-            <a href="#">Parent Submit</a>
+            <Link to="/parent-submit">Parent Submit</Link>
           </div>
           <div className="text-white flex flex-col gap-y-4 text-[15px] max-w-[12rem]">
             <h2 className="font-bold text-[19px]">Helps</h2>

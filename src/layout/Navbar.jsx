@@ -85,7 +85,7 @@ const Navbar = () => {
                     {
                       nvl.dropdown.map((_nvl, j) => (
                         <NavLink key={j} to={_nvl.to} className={({ isActive }) =>
-                          isActive ? "nav-item-dropdown-link text-[#D8BFD8]" : "nav-item-dropdown-link"
+                          isActive ? "nav-item-dropdown-link text-[#D8BFD8] text-[15px]" : "nav-item-dropdown-link text-[15px]"
                         }>
                           {_nvl.link}
                         </NavLink>
