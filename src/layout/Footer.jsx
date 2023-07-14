@@ -3,6 +3,7 @@ import fb from '../assets/fb.svg'
 import ig from '../assets/ig.svg'
 import tt from '../assets/tt.svg'
 import pt from '../assets/pt.svg'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -28,7 +29,7 @@ const Footer = () => {
             <a href="#">About</a>
             <a href="#">Success Stories</a>
             <a href="#">Parent Submit</a>
-            <a href="#">Careers</a>
+            <Link to='/careers'>Careers</Link>
           </div>
           <div className="text-white flex flex-col gap-y-4 text-[15px] max-w-[12rem]">
             <h2 className="font-bold text-[19px]">Events</h2>

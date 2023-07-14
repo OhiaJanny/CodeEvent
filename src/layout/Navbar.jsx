@@ -72,7 +72,7 @@ const Navbar = () => {
         <div>
           <img src={logo} alt="HerCode Logo" />
         </div>
-        <div className="text-white flex items-center gap-x-3">
+        <div className="text-white hidden items-center gap-x-3 lg:flex text-[15px]">
           {
             navLinksData.map((nvl, i) => (
               nvl.isDropdown ?
@@ -107,7 +107,7 @@ const Navbar = () => {
         </div>
         <div className='flex items-center gap-x-4'>
           <Button>Connect</Button>
-          <span className='material-icons text-white'>menu</span>
+          <span className='material-icons text-white lg:hidden'>menu</span>
         </div>
       </div>
     </nav>

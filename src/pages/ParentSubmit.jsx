@@ -5,12 +5,13 @@ import parent_img from '../assets/parentsu-img.svg'
 import wo14 from '../assets/wo14.png'
 import pp_img from '../assets/pp-img.svg'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from "swiper";
 import 'swiper/css';
 const About = () => {
 
 
   const testimonialCard = (
-    <div className="bg-darklight py-14 text-white px-10 max-w-[16rem] rounded-[4px]">
+    <div className="bg-darklight py-14 text-white px-10 max-w-[16rem] w-[256px] rounded-[4px]">
       <p className="text-center relative">
         <span className="top-[-26px] left-[-2px] absolute font-['Neuton'] text-[50px]">&ldquo;</span>
         I love creating new think every single days so let&rsquo;s do it together it was wonderful to work with you baby.
@@ -55,13 +56,16 @@ twice a week"/>
             <section className="mx-auto max-w-[70rem]">
               <Swiper
                 spaceBetween={2}
-                slidesPerView={4}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
+                slidesPerView="auto"
+                pagination={{
+                  clickable: true,
+                }}
+                modules={[Pagination]}
+                className="mySwiper"
               >
                 {
                   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((_, i) => (
-                    <SwiperSlide key={i}>{testimonialCard}</SwiperSlide>
+                    <SwiperSlide className='w-full max-w-[18rem]' key={i}>{testimonialCard}</SwiperSlide>
                   ))
                 }
               </Swiper>
