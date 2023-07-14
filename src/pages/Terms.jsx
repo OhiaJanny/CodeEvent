@@ -15,10 +15,11 @@ const Terms = () => {
                             <img src={terms_img} alt="Terms and condition" className='w-full max-w-[429px]' />
                         </figure>
                     </header>
-                    <section className='pt-24 text-white flex flex-col gap-y-20'>
+                    <section className='pt-24 text-white flex flex-col gap-y-16'>
                         <p>This AGREEMENT is BETWEEN: HerCode Event , a company registered under the  Non Profit Organization and Allied Matters Act 2023 with registered address at  Victoria Island, Eti-Osa 101233, Lagos that all the above listed information&rsquo;s are strictly for me and would be arrested if found incorrect.</p>
                         <p>HerCode Event is licensed by the Central Bank of Nigeria (“CBN”) to operate as an Non Profit Organization services to customers of partner banks in Nigeria. </p>
                         <p>I have read and understand that this terms and conditions are important that must have effect on me if applicable.</p>
+                        <p className='font-bold'>Download Terms and Conditions</p>
                     </section>
                 </div>
             </main>
