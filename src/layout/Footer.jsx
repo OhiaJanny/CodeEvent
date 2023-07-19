@@ -39,8 +39,8 @@ const Footer = () => {
           </div>
           <div className="text-white flex flex-col gap-y-4 text-[15px] max-w-[12rem]">
             <h2 className="font-bold text-[19px]">Helps</h2>
-            <a href="#">FAQs</a>
-            <a href="#">Privacy Policy</a>
+            <Link to="/faqs">FAQs</Link>
+            <Link to="/terms">Privacy Policy</Link>
             <Link to='/blog'>Blog</Link>
           </div>
         </div>

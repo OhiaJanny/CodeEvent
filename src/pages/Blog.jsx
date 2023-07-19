@@ -1,4 +1,3 @@
-import Button from "../components/Button"
 import Footer from "../layout/Footer"
 import Navbar from "../layout/Navbar"
 import blog_img from '../assets/blog-img.svg'
