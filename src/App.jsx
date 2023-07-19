@@ -19,6 +19,7 @@ import { ScrollRestoration } from "react-router-dom";
 import PageNotFound from './pages/PageNotFound';
 import Terms from './pages/Terms';
 import Blog from './pages/Blog';
+import Faqs from './pages/Faqs';
 
 const Root = () => {
 
@@ -91,7 +92,11 @@ const router = createBrowserRouter([
       {
         path:'blog',
         element: <Blog />
-      }
+      },
+      {
+        path:'faqs',
+        element: <Faqs />
+      },
     ]
   },
 ]);
