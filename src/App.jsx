@@ -18,6 +18,7 @@ import Careers from './pages/Careers'
 import { ScrollRestoration } from "react-router-dom";
 import PageNotFound from './pages/PageNotFound';
 import Terms from './pages/Terms';
+import Blog from './pages/Blog';
 
 const Root = () => {
 
@@ -86,6 +87,10 @@ const router = createBrowserRouter([
       {
         path:'terms',
         element: <Terms />
+      },
+      {
+        path:'blog',
+        element: <Blog />
       }
     ]
   },

@@ -11,7 +11,6 @@ const Coaching = () => {
   return (
     <>
       <Navbar />
-
       <section className="bg-dark py-[8rem] earth-image-bg">
         <div className="max-w-xl mx-auto px-6">
           <header className="max-w-[42rem] mx-auto mb-10">
