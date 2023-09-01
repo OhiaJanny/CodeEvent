@@ -45,7 +45,9 @@ const Hero = () => {
             <div className="grid place-items-center gap-y-10 max-w-[48rem] mx-auto">
                 <h1 className="text-[40px] text-white text-center font-bold">Her Code Event encourages more women in tech and sustains women already in tech</h1>
                 <p className="text-white text-center text-[24px] opacity-80">We provide you women interested in tech with free Bootcamps, webinars, events, coaching sessions and lots more. Start your career in tech today by joining Her Code Event. Subscribe for our daily tech digest  to stay updated.</p>
+                <a  href="https://forms.gle/yGmUKb8iK7i7YgDz9">
                 <Button>Connect</Button>
+                </a>
             </div>
         </header>
     )
@@ -167,7 +169,7 @@ const Events = () => {
                     <figcaption className="text-white pt-5">
                         <h2 className="font-bold">UK Women Submit</h2>
                         <p className="text-[14px] opacity-80 mb-2 mt-1">Wed 3rd April 2023, 9:00 AM</p>
-                        <a className="underline">See more</a>
+                        <a className="underline" href="https://forms.gle/yGmUKb8iK7i7YgDz9">See more</a>
                     </figcaption>
                 </div>
                 <div>
@@ -177,7 +179,7 @@ const Events = () => {
                     <figcaption className="text-white pt-5">
                         <h2 className="font-bold">Female Programmers Award</h2>
                         <p className="text-[14px] opacity-80 mb-2 mt-1">Sat 5th May 2023, 10:00 AM</p>
-                        <a className="underline">See more</a>
+                        <a className="underline" href="https://forms.gle/yGmUKb8iK7i7YgDz9">See more</a>
                     </figcaption>
                 </div>
                 <div>
@@ -187,7 +189,7 @@ const Events = () => {
                     <figcaption className="text-white pt-5">
                         <h2 className="font-bold">Entry Level Data Analysis Camp</h2>
                         <p className="text-[14px] opacity-80 mb-2 mt-1">Mon 7th June 2023, 12:00 PM</p>
-                        <a className="underline">See more</a>
+                        <a className="underline" href="https://forms.gle/yGmUKb8iK7i7YgDz9">See more</a>
                     </figcaption>
                 </div>
                 <div>
@@ -197,7 +199,8 @@ const Events = () => {
                     <figcaption className="text-white pt-5">
                         <h2 className="font-bold">Cyber Queens</h2>
                         <p className="text-[14px] opacity-80 mb-2 mt-1">Sat 5th May 2023, 10:00 AM</p>
-                        <a className="underline">See more</a>
+                        <a className="underline"  href="https://forms.gle/yGmUKb8iK7i7YgDz9">See more</a>
+                        
                     </figcaption>
                 </div>
             </div>
