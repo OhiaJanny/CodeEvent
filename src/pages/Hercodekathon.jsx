@@ -52,7 +52,7 @@ const Hercodekathon = () => {
                                     <input className="h-[45px] w-full rounded-l-md bg-dark px-4 py-1" placeholder="Enter Your Email Address" />
                                     <Button className="rounded-l-none">Submit</Button>
                                 </form>
-                                <a className="underline">Sponsor HSE</a>
+                                <a href="https://forms.gle/PLshAPqUrbSHQkxk6"  className="underline">Sponsor HSE</a>
                             </div>
                         </div>
                     </section>

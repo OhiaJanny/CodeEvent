@@ -248,9 +248,9 @@ const Community = () => {
                 <p className="opacity-80 text-[22px]">Sponsor  our Events and Bootcamps to reach out to more
                     women in the tech. Partner with us to reach more audience</p>
                 <div className="text-white flex max-w-fit mx-auto mt-2 underline items-center">
-                    <a>Partner</a>
+                    <a href="https://forms.gle/PLshAPqUrbSHQkxk6" >Partner</a>
                     <div className="w-[2px] h-[30px] bg-white mx-3"></div>
-                    <a>Sponsor</a>
+                    <a href="https://forms.gle/PLshAPqUrbSHQkxk6" >Sponsor</a>
                 </div>
             </div>
         </section>

@@ -14,7 +14,7 @@ const About = () => {
     <div className="bg-darklight py-14 text-white px-10 max-w-[16rem] w-[256px] rounded-[4px]">
       <p className="text-center relative">
         <span className="top-[-26px] left-[-2px] absolute font-['Neuton'] text-[50px]">&ldquo;</span>
-        I love creating new think every single days so let&rsquo;s do it together it was wonderful to work with you baby.
+        My daughter earns $5000 monthly from writing. Join parents summit to learn more.
         <span className="absolute bottom-[-26px] rotate-180 font-['Neuton'] text-[50px]">&ldquo;</span>
       </p>
       <figure className="mt-10 flex gap-x-4 items-center">

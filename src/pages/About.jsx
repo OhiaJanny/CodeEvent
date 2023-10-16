@@ -208,7 +208,7 @@ const Team = () => {
                                         <img src={pic} alt="Team" />
                                         <figcaption className="absolute bottom-0 object-cover bg-primary w-full px-3 py-1">
                                             <h1 className="text-white font-bold text-[19px]">Jane Doe</h1>
-                                            <p className="text-[#032A5E]">Founder</p>
+                                            <p className="text-[#032A5E]">Cofounder</p>
                                         </figcaption>
                                     </figure>
                                 </div>
